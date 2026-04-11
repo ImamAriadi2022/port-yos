@@ -12,7 +12,7 @@ function SkillsSection({ MotionSection, sectionVariant, skills }) {
       whileInView="visible"
       viewport={{ once: true, amount: 0.25 }}
     >
-      <h2>Skills</h2>
+      <h2>Keahlian</h2>
       <Row className="g-3 mt-1">
         {skills.map((skill) => {
           const Icon = skill.icon

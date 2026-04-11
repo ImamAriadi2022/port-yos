@@ -3,6 +3,9 @@
 :root {
   --bg-main: #fdfbf7;
   --bg-surface: #f7f2ec;
+  --bg-glow-1: rgba(226, 149, 120, 0.18);
+  --bg-glow-2: rgba(142, 125, 115, 0.16);
+  --nav-bg: rgba(253, 251, 247, 0.85);
   --primary: #8e7d73;
   --accent: #e29578;
   --text-main: #2b2d42;
@@ -20,10 +23,11 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: var(--text-main);
   background:
-    radial-gradient(circle at 10% -15%, rgba(226, 149, 120, 0.18), transparent 40%),
-    radial-gradient(circle at 90% 10%, rgba(142, 125, 115, 0.16), transparent 35%),
+    radial-gradient(circle at 10% -15%, var(--bg-glow-1), transparent 40%),
+    radial-gradient(circle at 90% 10%, var(--bg-glow-2), transparent 35%),
     var(--bg-main);
   line-height: 1.7;
+  transition: background 0.35s ease, color 0.35s ease;
 }
 
 h1,
@@ -38,9 +42,12 @@ h3,
   min-height: 100vh;
 }
 
-.portfolio-shell[data-theme='dusty'] {
+:root[data-theme='dusty'] {
   --bg-main: #fbf7fa;
   --bg-surface: #f2eef5;
+  --bg-glow-1: rgba(188, 143, 167, 0.2);
+  --bg-glow-2: rgba(139, 143, 159, 0.2);
+  --nav-bg: rgba(251, 247, 250, 0.88);
   --primary: #bc8fa7;
   --accent: #8b8f9f;
   --text-main: #2f3446;
@@ -51,9 +58,10 @@ h3,
 }
 
 .portfolio-nav {
-  background: rgba(253, 251, 247, 0.85);
+  background: var(--nav-bg);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--line-soft);
+  transition: background 0.3s ease, border-color 0.3s ease;
 }
 
 .portfolio-nav .nav-link {
@@ -71,7 +79,7 @@ h3,
 }
 
 .theme-toggle-btn {
-  border: 1px solid rgba(142, 125, 115, 0.32);
+  border: 1px solid color-mix(in srgb, var(--primary) 42%, transparent);
   border-radius: var(--radius-sm);
   background: #fff;
   color: var(--text-main);
@@ -82,8 +90,8 @@ h3,
 
 .theme-toggle-btn:hover,
 .theme-toggle-btn:focus {
-  background: rgba(226, 149, 120, 0.08);
-  border-color: rgba(142, 125, 115, 0.5);
+  background: color-mix(in srgb, var(--accent) 12%, #fff);
+  border-color: color-mix(in srgb, var(--primary) 65%, transparent);
   color: var(--text-main);
 }
 

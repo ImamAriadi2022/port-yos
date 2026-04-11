@@ -1,5 +1,5 @@
-import { useState } from 'react'
 import { motion } from 'framer-motion'
+import { useEffect, useState } from 'react'
 import { Container } from 'react-bootstrap'
 import AboutSection from './components/AboutSection'
 import ContactSection from './components/ContactSection'
@@ -20,16 +20,26 @@ const sectionVariant = {
 }
 
 const MotionSection = motion.section
+const THEME_STORAGE_KEY = 'portfolio-theme'
+const ALLOWED_THEMES = ['earthy', 'dusty']
 
 function App() {
-  const [theme, setTheme] = useState('earthy')
+  const [theme, setTheme] = useState(() => {
+    const savedTheme = localStorage.getItem(THEME_STORAGE_KEY)
+    return ALLOWED_THEMES.includes(savedTheme) ? savedTheme : 'earthy'
+  })
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme)
+    localStorage.setItem(THEME_STORAGE_KEY, theme)
+  }, [theme])
 
   const handleToggleTheme = () => {
     setTheme((previous) => (previous === 'earthy' ? 'dusty' : 'earthy'))
   }
 
   return (
-    <div className="portfolio-shell" data-theme={theme}>
+    <div className="portfolio-shell">
       <PortfolioNavbar theme={theme} onToggleTheme={handleToggleTheme} />
 
       <Container className="py-5">

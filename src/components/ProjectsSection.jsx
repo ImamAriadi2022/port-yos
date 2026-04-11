@@ -15,7 +15,7 @@ function ProjectsSection({ MotionSection, sectionVariant, projects }) {
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
     >
-      <h2>Selected Projects</h2>
+      <h2>Proyek Pilihan</h2>
       <Row className="g-4 mt-1">
         {projects.map((project) => (
           <Col key={project.title} md={6}>

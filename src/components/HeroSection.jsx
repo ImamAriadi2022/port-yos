@@ -16,17 +16,17 @@ function HeroSection({ MotionSection, sectionVariant }) {
       <Row className="align-items-center g-4">
         <Col lg={7}>
           <p className="section-kicker">Frontend Developer | UI/UX Enthusiast</p>
-          <h1>Hi, I&apos;m [Name], creating digital experiences with heart and code.</h1>
+          <h1>Halo, saya Yosinta Ariani, merancang pengalaman digital dengan empati dan kode.</h1>
           <p className="lead-text">
             Saya membangun antarmuka yang elegan, fungsional, dan meaningful,
             dengan perpaduan visual refinement dan engineering detail.
           </p>
           <div className="d-flex flex-wrap gap-3 mt-4">
             <Button className="btn-soft" href="#portfolio">
-              Explore Projects
+              Lihat Proyek
             </Button>
             <Button variant="outline-secondary" className="btn-outline-soft" href="#contact">
-              Let&apos;s Collaborate
+              Mari Berkolaborasi
             </Button>
           </div>
         </Col>
@@ -34,14 +34,14 @@ function HeroSection({ MotionSection, sectionVariant }) {
           <div className="hero-profile-wrap">
             <img
               src={profileImage}
-              alt="Professional profile placeholder"
+              alt="Foto profil Yosinta Ariani"
               className="hero-profile-image"
             />
             <div className="hero-card mt-3">
               <FiMail className="hero-icon" />
-              <p className="mb-2">Available for freelance and full-time opportunities.</p>
-              <a href="mailto:hello@example.com" className="inline-link">
-                hello@example.com
+              <p className="mb-2">Terbuka untuk proyek freelance maupun peluang full-time.</p>
+              <a href="mailto:yosinta.ariani@example.com" className="inline-link">
+                yosinta.ariani@example.com
               </a>
             </div>
           </div>

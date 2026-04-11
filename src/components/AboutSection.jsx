@@ -14,7 +14,7 @@ function AboutSection({ MotionSection, sectionVariant }) {
     >
       <Row>
         <Col lg={9}>
-          <h2>About Me</h2>
+          <h2>Tentang Saya</h2>
           <p>
             Dengan dedikasi pada frontend development dan UI/UX, saya fokus menciptakan
             pengalaman digital yang intuitif, estetis, serta berdampak pada tujuan bisnis.
