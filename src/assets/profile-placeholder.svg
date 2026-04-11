@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 360" role="img" aria-labelledby="title desc">
+  <title id="title">Profile Placeholder</title>
+  <desc id="desc">Illustrative female developer portrait placeholder</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5d9d0"/>
+      <stop offset="100%" stop-color="#ddd9e8"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="360" rx="28" fill="url(#bg)"/>
+  <circle cx="160" cy="132" r="66" fill="#f9ede6"/>
+  <path d="M110 118c7-39 93-45 104 4 4 18-5 35-12 44h-82c-9-13-14-28-10-48z" fill="#675a69"/>
+  <ellipse cx="160" cy="248" rx="94" ry="84" fill="#f9ede6"/>
+  <path d="M88 286c24-45 123-52 144-3l11 45H76l12-42z" fill="#8e7d73"/>
+  <circle cx="136" cy="132" r="6" fill="#2b2d42"/>
+  <circle cx="184" cy="132" r="6" fill="#2b2d42"/>
+  <path d="M142 165c12 9 24 9 36 0" stroke="#2b2d42" stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>
