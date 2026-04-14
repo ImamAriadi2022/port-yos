@@ -70,6 +70,11 @@ function ContactSection({ MotionSection, sectionVariant }) {
         <Col lg={5}>
           <h2>Kontak</h2>
           <p>Mari terhubung dan bangun produk digital yang bermakna bersama.</p>
+          <p>
+            <a href="mailto:yosintariani@gmail.com" className="inline-link">
+              yosintariani@gmail.com
+            </a>
+          </p>
           <div className="social-links">
             <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
               <FiLinkedin /> LinkedIn

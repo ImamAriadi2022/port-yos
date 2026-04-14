@@ -1,8 +1,6 @@
-import { Button, Container, Nav, Navbar } from 'react-bootstrap'
+import { Container, Nav, Navbar } from 'react-bootstrap'
 
-function PortfolioNavbar({ theme, onToggleTheme }) {
-  const isDusty = theme === 'dusty'
-
+function PortfolioNavbar() {
   return (
     <Navbar expand="lg" className="portfolio-nav" sticky="top">
       <Container>
@@ -16,9 +14,6 @@ function PortfolioNavbar({ theme, onToggleTheme }) {
             <Nav.Link href="#skills">Keahlian</Nav.Link>
             <Nav.Link href="#portfolio">Portofolio</Nav.Link>
             <Nav.Link href="#contact">Kontak</Nav.Link>
-            <Button className="theme-toggle-btn" onClick={onToggleTheme}>
-              Tema: {isDusty ? 'Dusty Pink' : 'Earthy'}
-            </Button>
           </Nav>
         </Navbar.Collapse>
       </Container>

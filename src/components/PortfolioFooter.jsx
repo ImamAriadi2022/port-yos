@@ -6,7 +6,7 @@ function PortfolioFooter() {
   return (
     <footer className="portfolio-footer">
       <Container>
-        <p className="mb-0">© {year} Yosinta Ariani. Dirancang dengan sentuhan elegan dan terarah.</p>
+        <p className="mb-0">© {year} Yosinta Riani. Dirancang dengan sentuhan elegan dan terarah.</p>
       </Container>
     </footer>
   )

@@ -1,9 +1,11 @@
 import { Button, Col, Row } from 'react-bootstrap'
-import { FiMail } from 'react-icons/fi'
-import profileImage from '../assets/profile-placeholder.svg'
+import { FiMessageCircle } from 'react-icons/fi'
+import profileImage from '../assets/potoProfil.jpeg'
 
 function HeroSection({ MotionSection, sectionVariant }) {
   const Section = MotionSection
+  const whatsappLink =
+    'https://wa.me/6283175371009?text=Halo%20Kak%20Yosinta%2C%20saya%20tertarik%20untuk%20diskusi%20project.'
 
   return (
     <Section
@@ -13,10 +15,10 @@ function HeroSection({ MotionSection, sectionVariant }) {
       initial="hidden"
       animate="visible"
     >
-      <Row className="align-items-center g-4">
-        <Col lg={7}>
+      <Row className="align-items-center g-5 ">
+        <Col lg={6} className="g-5" style={{ marginRight: '92px' }}>
           <p className="section-kicker">Frontend Developer | UI/UX Enthusiast</p>
-          <h1>Halo, saya Yosinta Ariani, merancang pengalaman digital dengan empati dan kode.</h1>
+          <h1>Halo, saya Yosinta Riani, merancang pengalaman digital dengan empati dan kode.</h1>
           <p className="lead-text">
             Saya membangun antarmuka yang elegan, fungsional, dan meaningful,
             dengan perpaduan visual refinement dan engineering detail.
@@ -25,24 +27,26 @@ function HeroSection({ MotionSection, sectionVariant }) {
             <Button className="btn-soft" href="#portfolio">
               Lihat Proyek
             </Button>
-            <Button variant="outline-secondary" className="btn-outline-soft" href="#contact">
-              Mari Berkolaborasi
+            <Button
+              as="a"
+              variant="outline-secondary"
+              className="btn-outline-soft"
+              href={whatsappLink}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Chat WhatsApp
             </Button>
           </div>
         </Col>
-        <Col lg={5}>
+        <Col lg={5} className="hero-visual-col">
           <div className="hero-profile-wrap">
-            <img
-              src={profileImage}
-              alt="Foto profil Yosinta Ariani"
-              className="hero-profile-image"
-            />
-            <div className="hero-card mt-3">
-              <FiMail className="hero-icon" />
-              <p className="mb-2">Terbuka untuk proyek freelance maupun peluang full-time.</p>
-              <a href="mailto:yosinta.ariani@example.com" className="inline-link">
-                yosinta.ariani@example.com
-              </a>
+            <div className="hero-media">
+              <img
+                src={profileImage}
+                alt="Foto profil Yosinta Riani"
+                className="hero-profile-image"
+              />
             </div>
           </div>
         </Col>
